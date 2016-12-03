@@ -1,0 +1,64 @@
+﻿Build started 27/07/2016 2:10 pm.
+     1>Project "C:\Users\rgcgroup\Dropbox\Dphil stuff\codes archives\7_5_hpc2D\7_5\7_5\7_5.vcxproj" on node 2 (Build target(s)).
+     1>AddCudaCompileDeps:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\cl.exe /E /nologo /showIncludes /TP /D__CUDACC__ /DWIN32 /D_DEBUG /D_CONSOLE /D_MBCS /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\bin" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include" /I. /FIcuda_runtime.h /c "C:\Users\rgcgroup\Dropbox\Dphil stuff\codes archives\7_5_hpc2D\7_5\7_5\kernel.cu" 
+       CudaBuild:
+         Compiling CUDA source file kernel.cu...
+         cmd.exe /C "C:\Users\rgcgroup\AppData\Local\Temp\tmpfcfe16b38a274058bdae784bc99efe7e.cmd"
+         "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\bin\nvcc.exe" -gencode=arch=compute_20,code=\"sm_20,compute_20\" --use-local-env --cl-version 2013 -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include"  -G   --keep-dir Debug -maxrregcount=0  --machine 32 --compile -cudart static  -g   -DWIN32 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /Zi /RTC1 /MDd " -o Debug\kernel.cu.obj "C:\Users\rgcgroup\Dropbox\Dphil stuff\codes archives\7_5_hpc2D\7_5\7_5\kernel.cu"
+         
+         C:\Users\rgcgroup\Dropbox\Dphil stuff\codes archives\7_5_hpc2D\7_5\7_5>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\bin\nvcc.exe" -gencode=arch=compute_20,code=\"sm_20,compute_20\" --use-local-env --cl-version 2013 -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include"  -G   --keep-dir Debug -maxrregcount=0  --machine 32 --compile -cudart static  -g   -DWIN32 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /Zi /RTC1 /MDd " -o Debug\kernel.cu.obj "C:\Users\rgcgroup\Dropbox\Dphil stuff\codes archives\7_5_hpc2D\7_5\7_5\kernel.cu" 
+     1>C:/Users/rgcgroup/Dropbox/Dphil stuff/codes archives/7_5_hpc2D/7_5/7_5/kernel.cu(22): warning : specifiers after comma between declarations are nonstandard
+     1>C:/Users/rgcgroup/Dropbox/Dphil stuff/codes archives/7_5_hpc2D/7_5/7_5/kernel.cu(22): warning : specifiers after comma between declarations are nonstandard
+     1>C:/Users/rgcgroup/Dropbox/Dphil stuff/codes archives/7_5_hpc2D/7_5/7_5/kernel.cu(22): warning : specifiers after comma between declarations are nonstandard
+     1>C:/Users/rgcgroup/Dropbox/Dphil stuff/codes archives/7_5_hpc2D/7_5/7_5/kernel.cu(253): warning : transfer of control bypasses initialization of:
+     1>C:/Users/rgcgroup/Dropbox/Dphil stuff/codes archives/7_5_hpc2D/7_5/7_5/kernel.cu(263): warning : transfer of control bypasses initialization of:
+     1>C:/Users/rgcgroup/Dropbox/Dphil stuff/codes archives/7_5_hpc2D/7_5/7_5/kernel.cu(268): warning : transfer of control bypasses initialization of:
+     1>C:/Users/rgcgroup/Dropbox/Dphil stuff/codes archives/7_5_hpc2D/7_5/7_5/kernel.cu(273): warning : transfer of control bypasses initialization of:
+     1>C:/Users/rgcgroup/Dropbox/Dphil stuff/codes archives/7_5_hpc2D/7_5/7_5/kernel.cu(278): warning : transfer of control bypasses initialization of:
+     1>C:/Users/rgcgroup/Dropbox/Dphil stuff/codes archives/7_5_hpc2D/7_5/7_5/kernel.cu(283): warning : transfer of control bypasses initialization of:
+     1>C:/Users/rgcgroup/Dropbox/Dphil stuff/codes archives/7_5_hpc2D/7_5/7_5/kernel.cu(292): warning : transfer of control bypasses initialization of:
+     1>C:/Users/rgcgroup/Dropbox/Dphil stuff/codes archives/7_5_hpc2D/7_5/7_5/kernel.cu(297): warning : transfer of control bypasses initialization of:
+     1>C:/Users/rgcgroup/Dropbox/Dphil stuff/codes archives/7_5_hpc2D/7_5/7_5/kernel.cu(302): warning : transfer of control bypasses initialization of:
+     1>C:/Users/rgcgroup/Dropbox/Dphil stuff/codes archives/7_5_hpc2D/7_5/7_5/kernel.cu(307): warning : transfer of control bypasses initialization of:
+     1>C:/Users/rgcgroup/Dropbox/Dphil stuff/codes archives/7_5_hpc2D/7_5/7_5/kernel.cu(312): warning : transfer of control bypasses initialization of:
+     1>C:/Users/rgcgroup/Dropbox/Dphil stuff/codes archives/7_5_hpc2D/7_5/7_5/kernel.cu(325): warning : variable "delta" was declared but never referenced
+     1>C:/Users/rgcgroup/Dropbox/Dphil stuff/codes archives/7_5_hpc2D/7_5/7_5/kernel.cu(22): warning : specifiers after comma between declarations are nonstandard
+     1>C:/Users/rgcgroup/Dropbox/Dphil stuff/codes archives/7_5_hpc2D/7_5/7_5/kernel.cu(22): warning : specifiers after comma between declarations are nonstandard
+     1>C:/Users/rgcgroup/Dropbox/Dphil stuff/codes archives/7_5_hpc2D/7_5/7_5/kernel.cu(22): warning : specifiers after comma between declarations are nonstandard
+     1>C:/Users/rgcgroup/Dropbox/Dphil stuff/codes archives/7_5_hpc2D/7_5/7_5/kernel.cu(253): warning : transfer of control bypasses initialization of:
+     1>C:/Users/rgcgroup/Dropbox/Dphil stuff/codes archives/7_5_hpc2D/7_5/7_5/kernel.cu(263): warning : transfer of control bypasses initialization of:
+     1>C:/Users/rgcgroup/Dropbox/Dphil stuff/codes archives/7_5_hpc2D/7_5/7_5/kernel.cu(268): warning : transfer of control bypasses initialization of:
+     1>C:/Users/rgcgroup/Dropbox/Dphil stuff/codes archives/7_5_hpc2D/7_5/7_5/kernel.cu(273): warning : transfer of control bypasses initialization of:
+     1>C:/Users/rgcgroup/Dropbox/Dphil stuff/codes archives/7_5_hpc2D/7_5/7_5/kernel.cu(278): warning : transfer of control bypasses initialization of:
+     1>C:/Users/rgcgroup/Dropbox/Dphil stuff/codes archives/7_5_hpc2D/7_5/7_5/kernel.cu(283): warning : transfer of control bypasses initialization of:
+     1>C:/Users/rgcgroup/Dropbox/Dphil stuff/codes archives/7_5_hpc2D/7_5/7_5/kernel.cu(292): warning : transfer of control bypasses initialization of:
+     1>C:/Users/rgcgroup/Dropbox/Dphil stuff/codes archives/7_5_hpc2D/7_5/7_5/kernel.cu(297): warning : transfer of control bypasses initialization of:
+     1>C:/Users/rgcgroup/Dropbox/Dphil stuff/codes archives/7_5_hpc2D/7_5/7_5/kernel.cu(302): warning : transfer of control bypasses initialization of:
+     1>C:/Users/rgcgroup/Dropbox/Dphil stuff/codes archives/7_5_hpc2D/7_5/7_5/kernel.cu(307): warning : transfer of control bypasses initialization of:
+     1>C:/Users/rgcgroup/Dropbox/Dphil stuff/codes archives/7_5_hpc2D/7_5/7_5/kernel.cu(312): warning : transfer of control bypasses initialization of:
+     1>C:/Users/rgcgroup/Dropbox/Dphil stuff/codes archives/7_5_hpc2D/7_5/7_5/kernel.cu(325): warning : variable "delta" was declared but never referenced
+         kernel.cu
+     1>C:/Users/rgcgroup/Dropbox/Dphil stuff/codes archives/7_5_hpc2D/7_5/7_5/kernel.cu(33): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+     1>C:/Users/rgcgroup/Dropbox/Dphil stuff/codes archives/7_5_hpc2D/7_5/7_5/kernel.cu(41): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+     1>C:/Users/rgcgroup/Dropbox/Dphil stuff/codes archives/7_5_hpc2D/7_5/7_5/kernel.cu(270): warning C4244: 'argument' : conversion from 'real' to 'size_t', possible loss of data
+     1>C:/Users/rgcgroup/Dropbox/Dphil stuff/codes archives/7_5_hpc2D/7_5/7_5/kernel.cu(275): warning C4244: 'argument' : conversion from 'real' to 'size_t', possible loss of data
+     1>C:/Users/rgcgroup/Dropbox/Dphil stuff/codes archives/7_5_hpc2D/7_5/7_5/kernel.cu(299): warning C4244: 'argument' : conversion from 'real' to 'size_t', possible loss of data
+     1>C:/Users/rgcgroup/Dropbox/Dphil stuff/codes archives/7_5_hpc2D/7_5/7_5/kernel.cu(304): warning C4244: 'argument' : conversion from 'real' to 'size_t', possible loss of data
+     1>C:/Users/rgcgroup/Dropbox/Dphil stuff/codes archives/7_5_hpc2D/7_5/7_5/kernel.cu(345): warning C4018: '<' : signed/unsigned mismatch
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\rgcgroup\Dropbox\Dphil stuff\codes archives\7_5_hpc2D\7_5\Debug\7_5.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\lib\Win32" cudart.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\rgcgroup\Dropbox\Dphil stuff\codes archives\7_5_hpc2D\7_5\Debug\7_5.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\rgcgroup\Dropbox\Dphil stuff\codes archives\7_5_hpc2D\7_5\Debug\7_5.lib" /MACHINE:X86 Debug\kernel.cu.obj
+         7_5.vcxproj -> C:\Users\rgcgroup\Dropbox\Dphil stuff\codes archives\7_5_hpc2D\7_5\Debug\7_5.exe
+       PostBuildEvent:
+         echo copy "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\bin\cudart*.dll" "C:\Users\rgcgroup\Dropbox\Dphil stuff\codes archives\7_5_hpc2D\7_5\Debug\"
+         copy "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\bin\cudart*.dll" "C:\Users\rgcgroup\Dropbox\Dphil stuff\codes archives\7_5_hpc2D\7_5\Debug\"
+         :VCEnd
+         copy "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\bin\cudart*.dll" "C:\Users\rgcgroup\Dropbox\Dphil stuff\codes archives\7_5_hpc2D\7_5\Debug\"
+         C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\bin\cudart32_75.dll
+         C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\bin\cudart64_75.dll
+                 2 file(s) copied.
+     1>Done Building Project "C:\Users\rgcgroup\Dropbox\Dphil stuff\codes archives\7_5_hpc2D\7_5\7_5\7_5.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:07.69

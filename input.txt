@@ -1,0 +1,11 @@
+1e-4 2.5 1e-4 2.5 1e2   0.1  0 
+dR   g_r  dZ   g_z  K_bv  SR       steps
+
+
+dR,dZ: are grid minimum difference. 
+g_r, g_z: are expansion factor for the grids.
+K_bv: is the butler-volmer kinetic constant.
+SR: scan rate of voltammetry.
+
+steps: if it equals 0 it makes a full cycle from potential -20 up to 20 and back to -20, 
+for a test, can just put small value (e.g. 10) for  few number of steps).
