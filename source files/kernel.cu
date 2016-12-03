@@ -29,10 +29,10 @@ int main()
 {
 	//Parameters voltammetry-------------------------------
 #ifdef cv
-		real SR = 400, Vi = -20, Vf =20, V = -20, K_bv = 1e10, a_bv = 0.5;  int S = -1; //voltammetry parameters: scan rate, min V, max V, initial V, kinetic konst, alpha coef, dierection of scan. 
+		real SR = 100000.0, Vi = -10, Vf =10, V = -10, K_bv = 1e10, a_bv = 0.5;  int S = -1; //voltammetry parameters: scan rate, min V, max V, initial V, kinetic konst, alpha coef, dierection of scan. 
 		real dV = 0.05; int niter = 2.0*(Vf - Vi) / dV; /* number of iterations*/;// dV small for accuracy, very performance costely but must be decreased for low scan rates.  
 		real T = 0/* time */, dt = dV / SR, dt_init = dt, Da = 1,/*(diffusion coef), is always 1 if dimensionless is applied*/  gammaT = 1.0;/*no expansion time for voltammetry,thus 1.0*/;
-		real dR = 1e-3, gammaR = 2.3, dZ = 1e-3, gammaZ = 2.3; //mesh parameters: minimum distances and expansion factors.
+		real dR = 1e-4, gammaR = 1.05, dZ = 1e-4, gammaZ = 1.05; //mesh parameters: minimum distances and expansion factors.
 		real Rmax = 500, Zmax = 500;/* Max 2D cell sizes in dimensinless units */ 
 #ifdef inputxt//reading parameters from input.txt for a test version.
 		cout << "Taking these data from input file for a simple test-run:"<<'\n';
@@ -40,7 +40,6 @@ int main()
 		input >> dR >> gammaR >> dZ >> gammaZ >> K_bv >> SR >> niter;
 		if (niter==0) niter = 2.0*(Vf - Vi) / dV;
 		printf("%s%f\t%s%f\t%s%f\t%s%f\t%s%f\t%s%f\t%s%d\n", "dR=", dR, "gammaR=", gammaR, "dZ =", dZ, "gammaZ =", gammaZ, "Kinetic const=", K_bv, "scan rate=", SR, "n. of time steps=",niter);
-		dt = dV / SR; dt_init = dt;
 #endif 
 
 #endif 	
@@ -52,7 +51,7 @@ int main()
 		real Rmax = 40, Zmax = 40; int niter = 500;
 		real SR = 20.0, Vi = 20, Vf = 20, V = 20, K_bv = 1e8, a_bv = 0.5;  int S = -1;/* not important for amperometry unless potential is not high enough*/
 #endif
-	
+		
 	//------------MESH(using the Grid class)--------------------
 	//using a mesh class to create a grid on cpu.
 	//R vector 
@@ -81,7 +80,7 @@ int main()
 	
 	//*****************************************************************************************************************
 	////---------------Simulation on the cpu--------------------
-	cout << "press any key to start CPU simulation"<<'\n';
+	cout << "press enter to start CPU simulation"<<'\n';
 	cin.get();
 	//-----------World-----------------------------------------
 	int Domain = A.world.make_domain(0, 0, Rn, Zn);//assign domain space to 2D grid
@@ -205,7 +204,7 @@ int main()
     }
 	cout << '\n' << "Finished cuda." ;
 	cout << "\n" << "\n" << "CPU CV:" << (end - begin) << "(ms)" << "\n" << "GPU CV:" << h_j[niter] << "(ms)" << "\n" << (end - begin) / h_j[niter] << " ratio" << "\n" << '\t' << "\n";
-	cout << '\n' << "Press to print and save: time, potential,flux, deviation from cpu (cpu-gpu)"<<'\n' ;
+	cout << '\n' << "press enter to print and save: t, V,flux, and deviation from cpu(cpu-gpu)"<<'\n' ;
 	cin.get();
   //*****************************************************************************************************************	
 
@@ -332,7 +331,7 @@ int main()
 	cudaMemcpyToSymbol(d_index, &current0, sizeof(double), 0, cudaMemcpyHostToDevice);
 	
 	
-	cout << '\n'<< "Now with GPU, press any key to start" << '\n';
+	cout << '\n'<< "Now with GPU, press enter to start" << '\n';
 	cin.get();
 	float milli;
 	cudaEvent_t start, stop;
