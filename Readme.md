@@ -51,11 +51,11 @@ TEST
 
 BUILD AND MODIFY THE CODE
 -----------------------------------------------------------------------------
-#  The project was programmed in C++ with CUDA, and a Visual Studio 2013  project have been set.
+###  The project was programmed in C++ with CUDA, and a Visual Studio 2013  project have been set.
    The ready project  is located on in the folder 'project' and can be lunched by clicking on the file 'hpcv7_5_visualstudio2013.sln'.  
    In order to be able to run this project, Visual Studio 2013 and CUDA 7.5 should be installed. 
 
-#  In the case that a later version of CUDA is installed or other version of Visual Studio (should support CUDA), a new project should be created as follows:
+###  In the case that a later version of CUDA is installed or other version of Visual Studio (should support CUDA), a new project should be created as follows:
    - Open Visual Studio, and navigate to File->New -> Project.
    - Look for NVIDIA tab in the project type, and choose your installed CUDA runtime environment. 
    - Create the project in a new folder.
@@ -64,7 +64,7 @@ BUILD AND MODIFY THE CODE
    - Navigate inside the copied 'source file' folder and add the source files kernel.cu, and kernel_gpu.h.
    - Build/Debug the solution.
 
-#  In a different IDE or different OS the user can find all the source files in the folder 'source files'.
+###  In a different IDE or different OS the user can find all the source files in the folder 'source files'.
 
 ----------------------------------------------------------------------------
 
