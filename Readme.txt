@@ -1,3 +1,6 @@
+The shared code from the paper:"Implementing high performance voltammetry simulation using the implicit parallel algorithm"
+http://dx.doi.org/10.1016/j.jelechem.2016.03.030
+
 
 CONTENTS DESCRIPTION
 ---------------------------------------------------------------------------------
